@@ -11,7 +11,13 @@ public class Lista7Exercicio3 {
         if (a > 1) {
             int soma = 0;
 
-            for (int i = b; i < c; i++) {
+            if(b>c){
+                int aux=b;
+                b=c;
+                c=aux;
+            }
+            
+            for (int i = b; i <= c; i++) {
                 if (i % a == 0) {
                     soma += i;
                 }
